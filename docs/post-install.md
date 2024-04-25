@@ -77,11 +77,11 @@
 
 - If you are configuring Windows 11, press ``Shift+F10`` to open CMD and execute ``oobe\BypassNRO.cmd``. This will allow us to continue without an internet connection by unlocking the ``continue with limited setup`` option as demonstrated in the video examples below
 
-- See [media/oobe-windows7-example.mp4](https://raw.githubusercontent.com/amitxv/PC-Tuning/main/media/oobe-windows7-example.mp4)
+- See [media/oobe-windows7-example.mp4](https://raw.githubusercontent.com/Vocaster/PC-Tuning/main/media/oobe-windows7-example.mp4)
 
-- See [media/oobe-windows8-example.mp4](https://raw.githubusercontent.com/amitxv/PC-Tuning/main/media/oobe-windows8-example.mp4)
+- See [media/oobe-windows8-example.mp4](https://raw.githubusercontent.com/Vocaster/PC-Tuning/main/media/oobe-windows8-example.mp4)
 
-- See [media/oobe-windows10+-example.mp4](https://raw.githubusercontent.com/amitxv/PC-Tuning/main/media/oobe-windows10+-example.mp4)
+- See [media/oobe-windows10+-example.mp4](https://raw.githubusercontent.com/Vocaster/PC-Tuning/main/media/oobe-windows10+-example.mp4)
 
 - Windows Server Only:
 
@@ -159,11 +159,11 @@ The registry settings are merged with the ``apply-registry.ps1`` script. As for 
 
 Disable features on the taskbar, unpin shortcuts and tiles from the taskbar and start menu.
 
-- See [media/visual-cleanup-windows7-example.mp4](https://raw.githubusercontent.com/amitxv/PC-Tuning/main/media/visual-cleanup-windows7-example.mp4)
+- See [media/visual-cleanup-windows7-example.mp4](https://raw.githubusercontent.com/Vocaster/PC-Tuning/main/media/visual-cleanup-windows7-example.mp4)
 
-- See [media/visual-cleanup-windows8-example.mp4](https://raw.githubusercontent.com/amitxv/PC-Tuning/main/media/visual-cleanup-windows8-example.mp4)
+- See [media/visual-cleanup-windows8-example.mp4](https://raw.githubusercontent.com/Vocaster/PC-Tuning/main/media/visual-cleanup-windows8-example.mp4)
 
-- See [media/visual-cleanup-windows10+-example.mp4](https://raw.githubusercontent.com/amitxv/PC-Tuning/main/media/visual-cleanup-windows10+-example.mp4)
+- See [media/visual-cleanup-windows10+-example.mp4](https://raw.githubusercontent.com/Vocaster/PC-Tuning/main/media/visual-cleanup-windows10+-example.mp4)
 
 ## Install Drivers
 
@@ -217,7 +217,7 @@ Configure a browser of your choice.
 
 - See [privacytests.org](https://privacytests.org)
 
-- See [amitxv/firefox](https://github.com/amitxv/firefox) for a minimal Firefox installation script
+- See [Vocaster/firefox](https://github.com/Vocaster/firefox) for a minimal Firefox installation script
 
 ## Disable Residual Scheduled Tasks
 
@@ -303,7 +303,7 @@ These are runtimes that are dependencies of applications worldwide.
 
 ## Manage Appx Packages (Windows 8+)
 
-- Download and open [AppxPackagesManager](https://github.com/amitxv/AppxPackagesManager) then remove everything that you don't need (which may be everything). It is usually fine to keep packages installed provided that they don't run in the background continually
+- Download and open [AppxPackagesManager](https://github.com/Vocaster/AppxPackagesManager) then remove everything that you don't need (which may be everything). It is usually fine to keep packages installed provided that they don't run in the background continually
 
 - Required packages for Microsoft Store. It may be a suitable idea to keep this as you can download applications in the future if desired although, you can download ``.appx`` packages directly and install them manually without the store, but this may become tedious. See [here](https://superuser.com/questions/1721755/is-there-a-way-to-install-microsoft-store-exclusive-apps-without-store) for more information
 
@@ -419,7 +419,7 @@ You may have already found a stable overclock for your display in the [Physical 
 
     - See [What is identity scaling and how can you use it?](/docs/research.md#what-is-identity-scaling-and-how-can-you-use-it)
 
-    - Optionally use [QueryDisplayScaling](https://github.com/amitxv/QueryDisplayScaling) to query the current scaling mode
+    - Optionally use [QueryDisplayScaling](https://github.com/Vocaster/QueryDisplayScaling) to query the current scaling mode
 
 - Try to delete every resolution and the other bloatware (audio blocks) apart from your native resolution in CRU. This may be a workaround for the ~1-second black screen when alt-tabbing while using the ``Hardware: Legacy Flip`` presentation mode
 
@@ -697,7 +697,7 @@ C:\bin\disable-process-mitigations.bat
 
 I'm not responsible if anything goes wrong or you BSOD. The idea is to disable services while using your real-time application and revert to default services for everything else.
 
-- The list can be customized by editing ``C:\bin\minimal-services.ini`` in a text editor. There are several comments in the config file that you can read to check whether you need a given service or not. As an example, a user with Ethernet does not need the Wi-Fi services enabled. If you plan on editing ``minimal-services.ini``, then learn the [syntax of the config file](https://github.com/amitxv/service-list-builder#usage-and-program-logic)
+- The list can be customized by editing ``C:\bin\minimal-services.ini`` in a text editor. There are several comments in the config file that you can read to check whether you need a given service or not. As an example, a user with Ethernet does not need the Wi-Fi services enabled. If you plan on editing ``minimal-services.ini``, then learn the [syntax of the config file](https://github.com/Vocaster/service-list-builder#usage-and-program-logic)
 
 - [Configure a Static IP address](https://www.youtube.com/watch?t=36&v=5iRp1Nug0PU). This is required as we will be disabling the services that waste resources which DHCP relies on
 
@@ -711,7 +711,7 @@ I'm not responsible if anything goes wrong or you BSOD. The idea is to disable s
 
 - On Win10 1503 - 1703, delete the ``ErrorControl`` registry key in ``HKLM\SYSTEM\CurrentControlSet\Services\Schedule`` to prevent an unresponsive explorer shell after disabling the Task Scheduler service
 
-- Download and extract the latest [service-list-builder](https://github.com/amitxv/service-list-builder/releases) release. Open CMD and CD to the extracted folder where the executable is located
+- Download and extract the latest [service-list-builder](https://github.com/Vocaster/service-list-builder/releases) release. Open CMD and CD to the extracted folder where the executable is located
 
 - Use [Autoruns](https://learn.microsoft.com/en-us/sysinternals/downloads/autoruns) to remove entries with a yellow label in the ``Services`` section to prevent errors with finding non-existent binaries in service-list-builder
 
@@ -733,7 +733,7 @@ For future reference, if something doesn't work after disabling services but wor
 
 - **Short-term/Temporary Solution**: Run ``Services-Enable.bat``, do whatever you are trying to do, then run ``Services-Disable.bat`` again (that's the idea of having toggle scripts!). If the functionality is still broken after enabling services then the problem is not related to services
 
-- **Long-term/Permanent Solution**: If you absolutely need some functionality while services are disabled, then see the [Debugging Services](https://github.com/amitxv/service-list-builder#debugging-services) section in the documentation to determine what services are required for it. Note that this is only an option if that functionality works while services are enabled but breaks with services disabled. Once you have found what services are required for some functionality, you can contribute by posting an [issue](https://github.com/amitxv/PC-Tuning/issues) describing what functionality was fixed so that the services can be added to the config for the future
+- **Long-term/Permanent Solution**: If you absolutely need some functionality while services are disabled, then see the [Debugging Services](https://github.com/Vocaster/service-list-builder#debugging-services) section in the documentation to determine what services are required for it. Note that this is only an option if that functionality works while services are enabled but breaks with services disabled. Once you have found what services are required for some functionality, you can contribute by posting an [issue](https://github.com/Vocaster/PC-Tuning/issues) describing what functionality was fixed so that the services can be added to the config for the future
 
 ## Configure Device Manager
 
@@ -862,7 +862,7 @@ As an example, 1ms IMOD interval with an 8kHz mouse is already problematic becau
     reg add "HKLM\SYSTEM\CurrentControlSet\Control\CI\Config" /v "VulnerableDriverBlocklistEnable" /t REG_DWORD /d "0" /f
     ```
 
-- In some cases, the interrupter index can change after a reboot meaning the address will become invalid if it is hard-coded. To work around this, you can simply disable IMOD for all interrupters by placing the [XHCI-IMOD-Interval.ps1](https://gist.github.com/amitxv/4fe34e139f0aec681a6122f39757d86e) script somewhere safe and launching it at startup. See [docs/startup-techniques.md](/docs/startup-techniques.md)
+- In some cases, the interrupter index can change after a reboot meaning the address will become invalid if it is hard-coded. To work around this, you can simply disable IMOD for all interrupters by placing the [XHCI-IMOD-Interval.ps1](https://gist.github.com/Vocaster/4fe34e139f0aec681a6122f39757d86e) script somewhere safe and launching it at startup. See [docs/startup-techniques.md](/docs/startup-techniques.md)
 
     ```
     PowerShell C:\XHCI-IMOD-Interval.ps1
@@ -945,7 +945,7 @@ Allows Windows to prioritize packets of an application.
 
 Windows schedules interrupts and DPCs on CPU 0 for several modules by default. In any case, scheduling many tasks on a single CPU can introduce additional overhead and increased jitter due to them competing for CPU time. To alleviate this, affinities can be configured to isolate given modules from disturbances including servicing time-sensitive modules on underutilized CPUs instead of clumping everything on a single CPU.
 
-- Use the xperf DPC/ISR report generated by the [xperf-dpcisr.bat](https://gist.github.com/amitxv/896a68330d037684fee5b933102f24f2) script to analyze which CPUs kernel-mode modules are being serviced on. You can not manage affinities if you do not know what is running and which CPU(s) they are running on, the same applies to user-mode threads. Additionally, verify whether interrupt affinity policies are performing as expected by analyzing per-CPU usage for the module in question while the device is busy
+- Use the xperf DPC/ISR report generated by the [xperf-dpcisr.bat](https://gist.github.com/Vocaster/896a68330d037684fee5b933102f24f2) script to analyze which CPUs kernel-mode modules are being serviced on. You can not manage affinities if you do not know what is running and which CPU(s) they are running on, the same applies to user-mode threads. Additionally, verify whether interrupt affinity policies are performing as expected by analyzing per-CPU usage for the module in question while the device is busy
 
 - Additionally, core-to-core-latency benchmarks can assist with decision-making in terms of affinity management
 
@@ -957,7 +957,7 @@ Windows schedules interrupts and DPCs on CPU 0 for several modules by default. I
 
 #### GPU and DirectX Graphics Kernel
 
-[AutoGpuAffinity](https://github.com/amitxv/AutoGpuAffinity) can be used to benchmark the most performant CPUs that the GPU-related modules are assigned to.
+[AutoGpuAffinity](https://github.com/Vocaster/AutoGpuAffinity) can be used to benchmark the most performant CPUs that the GPU-related modules are assigned to.
 
 #### XHCI and Audio Controller
 
@@ -1011,7 +1011,7 @@ Get-Process @("svchost", "audiodg") -ErrorAction SilentlyContinue | ForEach-Obje
 
 ### Reserved CPU Sets (Windows 10+)
 
-[ReservedCpuSets](https://github.com/amitxv/ReservedCpuSets) can be used to prevent Windows routing interrupts and scheduling tasks on specific CPUs. As mentioned previously, isolating modules from user and kernel-level disturbances helps reduce contention, jitter and allows time-sensitive modules to get the CPU time they require.
+[ReservedCpuSets](https://github.com/Vocaster/ReservedCpuSets) can be used to prevent Windows routing interrupts and scheduling tasks on specific CPUs. As mentioned previously, isolating modules from user and kernel-level disturbances helps reduce contention, jitter and allows time-sensitive modules to get the CPU time they require.
 
 - As mentioned in the [User-Mode (Processes, Threads)](#user-mode-processes-threads) step, you should determine how well or poorly your application's performance scales with core count to give you a rough idea as to how many cores you can afford to reserve
 
@@ -1024,7 +1024,7 @@ Get-Process @("svchost", "audiodg") -ErrorAction SilentlyContinue | ForEach-Obje
 - As CPU sets are considered soft policies, the configuration isn't guaranteed. A CPU-intensive process such as a stress-test will utilize the reserved cores if required
 
 > [!IMPORTANT]
-> Unexpected behavior occurs when a process affinity is set to reserved and unreserved CPUs. Ensure to set the affinity to either reserved or unreserved CPUs, not a combination of both. See [here](https://github.com/amitxv/ReservedCpuSets/issues/2#issuecomment-1805837921) for more information.
+> Unexpected behavior occurs when a process affinity is set to reserved and unreserved CPUs. Ensure to set the affinity to either reserved or unreserved CPUs, not a combination of both. See [here](https://github.com/Vocaster/ReservedCpuSets/issues/2#issuecomment-1805837921) for more information.
 
 #### Use Cases
 
@@ -1047,7 +1047,7 @@ Raising the timer resolution helps with precision where constant sleeping or pac
 
 - Even if you do not want to raise the timer resolution beyond 1ms, it is useful to call for it nonetheless as old applications do not raise the resolution which results in unexpected behavior
 
-- Higher resolution results in higher precision, but in some cases 0.5ms provides less precision than something slightly lower such as 0.507ms. You should benchmark what calling resolution provides the highest precision (the lowest deltas) in the [MeasureSleep](https://github.com/amitxv/TimerResolution) program while requesting different resolutions with the [SetTimerResolution](https://github.com/amitxv/TimerResolution) program. This should be carried out under load as idle benchmarks may be misleading. The [micro-adjust-benchmark.ps1](https://github.com/amitxv/TimerResolution/blob/main/micro-adjust-benchmark.ps1) script can be used to automate the process
+- Higher resolution results in higher precision, but in some cases 0.5ms provides less precision than something slightly lower such as 0.507ms. You should benchmark what calling resolution provides the highest precision (the lowest deltas) in the [MeasureSleep](https://github.com/Vocaster/TimerResolution) program while requesting different resolutions with the [SetTimerResolution](https://github.com/Vocaster/TimerResolution) program. This should be carried out under load as idle benchmarks may be misleading. The [micro-adjust-benchmark.ps1](https://github.com/Vocaster/TimerResolution/blob/main/micro-adjust-benchmark.ps1) script can be used to automate the process
 
     - See [Micro-adjusting timer resolution for higher precision](/docs/research.md#micro-adjusting-timer-resolution-for-higher-precision) for a detailed explanation
 

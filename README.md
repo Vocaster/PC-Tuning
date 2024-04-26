@@ -1,6 +1,6 @@
 # PC-Tuning
 
-[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/amitxv)
+[![Buy Me A Coffee](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/Vocaster)
 
 ## Table of Contents
 
@@ -24,9 +24,9 @@ As pre-modified Windows ISOs and setup scripts have gained popularity over the y
 
 ## Staying Informed
 
-The contents and information included in this repository will inevitably change over time. To stay up to date, it is recommended to review what has changed once in a while. At the time of reviewing, take a note of the 7 digit SHA code in the [latest commit](https://github.com/amitxv/PC-Tuning/commit/main) (e.g. ``2428150``) then use the URL below as an example to compare what has changed since the noted commit.
+The contents and information included in this repository will inevitably change over time. To stay up to date, it is recommended to review what has changed once in a while. At the time of reviewing, take a note of the 7 digit SHA code in the [latest commit](https://github.com/Vocaster/PC-Tuning/commit/main) (e.g. ``2428150``) then use the URL below as an example to compare what has changed since the noted commit.
 
-<https://github.com/amitxv/PC-Tuning/compare/2428150..main>
+<https://github.com/Vocaster/PC-Tuning/compare/2428150..main>
 
 ## Benchmarking
 
@@ -34,8 +34,8 @@ Before diving into the main content, it is important to learn and understand how
 
 - **[FrameView](https://www.nvidia.com/en-gb/geforce/technologies/frameview)** - [PC Latency](https://images.nvidia.com/content/images/article/system-latency-optimization-guide/nvidia-latency-optimization-guide-pc-latency.png) in games that support [PC Latency Stats](https://www.nvidia.com/en-gb/geforce/technologies/reflex/supported-products) and frame pacing
 - **[PresentMon](https://boringboredom.github.io/Frame-Time-Analysis)** - Various metrics such as frame pacing and [GPU Busy](https://www.intel.com/content/www/us/en/docs/gpa/user-guide/2022-4/gpu-metrics.html). See a full list [here](https://github.com/GameTechDev/PresentMon/blob/main/README-CaptureApplication.md#metric-definitions)
-- **[Windows Performance Toolkit](https://learn.microsoft.com/en-us/windows-hardware/test/wpt)** - Advanced performance analysis library for Windows. Measure ISR/DPC execution times with [xperf](https://gist.github.com/amitxv/896a68330d037684fee5b933102f24f2)
-- **[Mouse Tester](https://github.com/amitxv/MouseTester)** - Polling interval, X/Y counts and more plots against time
+- **[Windows Performance Toolkit](https://learn.microsoft.com/en-us/windows-hardware/test/wpt)** - Advanced performance analysis library for Windows. Measure ISR/DPC execution times with [xperf](https://gist.github.com/Vocaster/896a68330d037684fee5b933102f24f2)
+- **[Mouse Tester](https://github.com/Vocaster/MouseTester)** - Polling interval, X/Y counts and more plots against time
 - **[NVIDIA Reflex Analyzer](https://www.nvidia.com/en-gb/geforce/news/reflex-latency-analyzer-360hz-g-sync-monitors)** - End-to-end latency
 - **[Frame-Time-Analysis](https://boringboredom.github.io/Frame-Time-Analysis)** - Analyze CSV data logged by the programs mentioned above including 1%, 0.1% lows metrics
 - **[Latency Grapher](https://boringboredom.github.io/tools/latencygrapher)** - Analyze latency results from RLA, FrameView and PresentMon

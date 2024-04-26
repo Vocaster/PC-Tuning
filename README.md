@@ -1,5 +1,5 @@
 # PC-Tuning
-
+Credits to AmitXV
 ## Table of Contents
 
 - [Rationale](#rationale)
